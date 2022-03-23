@@ -1,0 +1,263 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- custom styling ---------- */
+
+/* ------- main ------- */
+
+@font-face {
+  font-family: "Ailerons";
+  src: url(./font/Ailerons/Ailerons.ttf) format("truetype");
+}
+
+html {
+  min-height: 100vh;
+  margin: 1em 0;
+  max-width: 440px;
+}
+
+body {
+  background-image: url("/photos/isopleths.png");
+
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+/* ------- header / nav / search ------- */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 2em 2em 1em 2em;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  margin: 0.5em 0.5em;
+
+  font-size: 0.8em;
+  font-weight: 50;
+  text-transform: uppercase;
+}
+
+.search {
+  margin: 0.5em 0.5em 1.5em 0.5em;
+}
+
+.logo {
+  display: flex;
+  flex-flow: column;
+}
+
+/* ------- IMG ------- */
+
+img {
+  display: flex;
+  max-width: 100%;
+  flex-grow: 1;
+}
+
+#logo {
+  float: left;
+  width: 5em;
+  margin: 3em 2em 0 0.7em;
+}
+
+#img-1,
+#img-2,
+#img-3,
+#img-4,
+#img-5 {
+  display: flex;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+#fb-img,
+#insta-img {
+  max-width: 1.2em;
+}
+
+/* ------- TXT ------- */
+
+.logo-txt {
+  float: left;
+  margin: 0 2em 3em 1em;
+
+  font-family: "Ailerons";
+  font: 1em;
+  font-weight: 50;
+}
+
+h1 {
+  font-family: "Ailerons";
+  font-weight: 100;
+}
+
+p {
+  display: flex;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+
+  font-family: "Ailerons";
+  font-weight: 50;
+  font-size: 1.2em;
+}
+
+/* ------- footer ------- */
+
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin: 3em 3em;
+}
+
+.facebook,
+.instagram {
+  margin: 0 0.5em 1em 0.5em;
+}
+
+.logo-txt-2 {
+  margin: 0 0.5em 0 2em;
+  font-family: "Ailerons";
+  font-weight: 50;
+}
