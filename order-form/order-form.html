@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.
+    0"
+    />
+    <link rel="stylesheet" href="order-form.css" />
+    <title>order form</title>
+  </head>
+  <body>
+    <header>
+      <img src="../photos/logo.png" alt="Logo image" />
+
+      <h1>Your personalized order</h1>
+    </header>
+
+    <main>
+      <form>
+        <div class="scroll-multiple">
+          <label>I want to order:</label>
+          <select multiple name="order" id="order-choice">
+            <option>t-shirt with a print</option>
+            <option>painting</option>
+            <option>print</option>
+          </select>
+        </div>
+
+        <div class="print-images">
+          <label>Choose your prefered design:</label>
+          <!-- <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" /> -->
+        </div>
+
+        <div class="tshirt-color">
+          <label for="background"
+            >It you have chosen a t-shirt, please choose a color:</label
+          >
+          <input
+            type="color"
+            id="background"
+            name="theme-color"
+            value="background"
+            required
+          />
+        </div>
+
+        <div class="amount">
+          <label for="order-amount" id="order-amount_label"
+            >Please, write the amount of products you are ordering:</label
+          >
+          <input
+            type="number"
+            id="order-amount"
+            min="1"
+            max="10"
+            name="order-number"
+            placeholder="Please, write a number."
+          />
+        </div>
+
+        <div class="size">
+          <fieldset class="size-fieldset">
+            <legend>Select the size:</legend>
+
+            <div class="radiobuttons">
+              <span>XS</span>
+              <input
+                type="radio"
+                id="xs"
+                value="xs"
+                name="tshirt-size"
+                class="radio-input"
+              />
+
+              <br />
+              <input
+                type="number"
+                id="xs-amount"
+                value="amount"
+                min="1"
+                max="10"
+                placeholder="Enter a number of t-shirts."
+              />
+              <br />
+
+              <span>S</span>
+              <input
+                type="radio"
+                id="s"
+                value="s"
+                name="tsirt-size"
+                class="radio-input"
+              />
+
+              <br />
+              <input
+                type="number"
+                id="s-amount"
+                value="amount"
+                min="1"
+                max="10"
+                placeholder="Enter a number of t-shirts."
+              />
+              <br />
+
+              <br />
+              <span>M</span>
+              <input
+                type="radio"
+                id="m"
+                value="m"
+                name="tsirt-size"
+                class="radio-input"
+              />
+
+              <br />
+              <input
+                type="number"
+                id="m-amount"
+                value="amount"
+                min="1"
+                max="10"
+                placeholder="Enter a number of t-shirts."
+              />
+              <br />
+
+              <span>L</span>
+              <input
+                type="radio"
+                id="l"
+                value="l"
+                name="tsirt-size"
+                class="radio-input"
+              />
+
+              <br />
+              <input
+                type="number"
+                id="l-amount"
+                value="amount"
+                min="1"
+                max="10"
+                placeholder="Enter a number of t-shirts."
+              />
+              <br />
+
+              <span>XL</span>
+              <input
+                type="radio"
+                id="xl"
+                value="xl"
+                name="tsirt-size"
+                class="radio-input"
+              />
+
+              <br />
+              <input
+                type="number"
+                id="xl-amount"
+                value="amount"
+                min="1"
+                max="10"
+                placeholder="Enter a number of t-shirts."
+              />
+              <br />
+
+              <span>XXL</span>
+              <input
+                type="radio"
+                id="xxl"
+                value="xxl"
+                name="tsirt-size"
+                class="radio-input"
+              />
+
+              <br />
+              <input
+                type="number"
+                id="xxl-amount"
+                value="amount"
+                min="1"
+                max="10"
+                placeholder="Enter a number of t-shirts."
+              />
+              <br />
+            </div>
+            <br />
+
+            <div class="submit-buttons">
+              <button class="submit-button">ORDER</button>
+              <button class="reset-button" type="reset">CANCEL</button>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="cut">
+          <fieldset class="cut-fieldset">
+            <legend>Please, select the shirt type:</legend>
+
+            <div class="radiobuttons">
+              <span>male cut</span>
+              <input
+                type="radio"
+                id="male-cut"
+                value="male-cut"
+                name="tshirt-cut"
+                class="radio-input"
+                checked
+              />
+              <label for="male-cut" class="radio-label"></label>
+
+              <span>female cut</span>
+              <input
+                type="radio"
+                id="female-cut"
+                value="female-cut"
+                name="tshirt-cut"
+                class="radio-input"
+              />
+              <label for="female-cut" class="radio-label"></label>
+            </div>
+          </fieldset>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <a href="" target="_blank">Terms of use</a>
+      <br />
+
+      <p><a href="index.html">emarekica</a> &#174; 2022.</p>
+    </footer>
+
+    <script src="
+    order-form.js"></script>
+  </body>
+</html>
