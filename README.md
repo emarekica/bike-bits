@@ -7,6 +7,7 @@
  
 Currently working on:
 
+- [x] order form
 - [] mobile version CSS
 - [] Responsiveness
 - [] modal window when clicking of photos + 
