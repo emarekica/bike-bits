@@ -6,6 +6,12 @@
 
 <br>
 
+- HTML5
+- CSS3 / SCSS
+- JavaScript
+- JavaScript ES6 modules
+- Webpack
+
 <br><br>
 
 <hr />
@@ -24,11 +30,14 @@
 
 <br>
 
+- [ ] fill text content
+      <br>
+
 - [ ] home page
 - [ ] about
 - [ ] blog page
-- [ ] galery page
-- [ ] order form
+- [ ] gallery page
+- [ ] order form - opens when you click on a button somewhere in the gallery
 - [ ] contact
       <br>
 
@@ -76,6 +85,10 @@
 <br>
 
 ## Resources
+
+<br>
+
+- [Icon in search bar](https://nikitahl.com/search-icon-inside-input)
 
 <br>
 

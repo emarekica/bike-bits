@@ -134,7 +134,7 @@ html {
 }
 
 body {
-  background-image: url("./assets/backgrounds/isopleths.png");
+  background-image: url("../../assets/backgrounds/isopleths.png");
 
   font-family: "Alegreya Sans", sans-serif;
 }
@@ -321,6 +321,12 @@ img {
 #txt-1 {
   grid-column: 1 / 5;
   grid-row: 2 / 3;
+
+  font-size: 1.5em;
+  padding: 0 2em 0 0;
+  word-break: break-all;
+  line-height: 1.7em;
+  font-weight: 100;
 }
 
 #img-2 {
@@ -338,8 +344,13 @@ img {
 
   display: flex;
   flex-direction: column;
+  align-items: center;
 
-  font-size: 1.8em;
+  font-family: "Ailerons";
+  font-weight: 50;
+  margin-bottom: 2.5em;
+  font-size: 2.5em;
+  color: #595858;
 }
 
 .img-3__container {
@@ -347,12 +358,15 @@ img {
   grid-row: 4 / 5;
 }
 
-/* #img-3__desc {
-} */
-
 #txt-2 {
   grid-column: 8 / 10;
   grid-row: 4 / 5;
+
+  font-size: 1.5em;
+  padding: 0 0 0 2em;
+  word-break: break-all;
+  line-height: 1.7em;
+  font-weight: 100;
 }
 
 #img-4 {
@@ -379,7 +393,7 @@ article > p {
   grid-column: 1 / 5;
   grid-row: 1 / 2;
   grid-row: auto;
-  max-width: 90%;
+  max-width: 80%;
 }
 
 #gpx {
@@ -391,7 +405,8 @@ article > p {
   flex-direction: column;
   justify-content: center;
 
-  font-size: 1.5em;
+  font-size: 2em;
+  text-transform: uppercase;
 }
 
 .bottom-border {
@@ -404,6 +419,9 @@ article > p {
 .gallery {
   display: flex;
   flex-direction: column;
+  align-self: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .img-gallery {
@@ -439,19 +457,35 @@ h2.gallery {
 h1 {
   font-family: "Ailerons";
   font-weight: 100;
+  color: #595858;
 }
 
 p {
   display: flex;
 }
 
-h2 {
-  display: flex;
-  align-items: center;
+article > p {
+  font-size: 1.5em;
 
-  font-family: "Ailerons";
-  font-weight: 50;
-  font-size: 1.2em;
+  word-break: break-all;
+  line-height: 1.7em;
+  font-weight: 100;
+}
+
+.img-description {
+  margin-top: 2em;
+  font-weight: 100;
+  color: #595858;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.img-description-2 {
+  margin: 2em 0 0 6em;
+  font-weight: 100;
+  color: #595858;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 /* ------- footer ------- */
