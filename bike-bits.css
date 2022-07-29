@@ -128,7 +128,7 @@ html {
 }
 
 body {
-  background-image: url("/photos/isopleths.png");
+  background-image: url("./assets/backgrounds/isopleths.png");
 
   font-family: "Alegreya Sans", sans-serif;
 }
