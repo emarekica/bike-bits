@@ -21,6 +21,13 @@
 
 <br>
 
+- home page with blog selection, gallery preview and contact
+- about section
+- blog section with cycling adventures from Croatia and Slovenia
+- photo gallery
+- product order section
+- contact
+
 <br><br>
 
 <hr />
