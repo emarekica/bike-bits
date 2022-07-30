@@ -401,6 +401,34 @@ h2 {
   margin-bottom: 4em;
 }
 
+.about {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto;
+
+  background-color: #edecec4c;
+}
+
+.about-header {
+  grid-column: 2 / 4;
+  grid-row: 1;
+  text-align: center;
+
+  margin-top: 2em;
+}
+
+#about-photo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+}
+
+.about-txt {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+
+  margin: 8em 4em 4em 4em;
+}
+
 /* ------- footer ------- */
 
 footer {
