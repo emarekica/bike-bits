@@ -120,7 +120,7 @@ table {
   padding: 0;
 }
 
-/* ------- main ------- */
+/* ------- general ------- */
 
 @font-face {
   font-family: "Ailerons";
@@ -129,8 +129,6 @@ table {
 
 html {
   min-height: 100vh;
-  /* margin: 1em 0; */
-  /* max-width: 440px; */
 }
 
 body {
@@ -282,12 +280,6 @@ img {
 #img-4,
 #img-5 {
   display: flex;
-}
-
-.gallery {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
 }
 
 #fb-img,

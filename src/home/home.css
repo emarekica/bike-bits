@@ -1,0 +1,336 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ------- general ------- */
+
+@font-face {
+  font-family: "Ailerons";
+  src: url(./font/Ailerons/Ailerons.ttf) format("truetype");
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  background-image: url("../../assets/backgrounds/isopleths.png");
+
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+/* ------- header / nav / search ------- */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  justify-content: center;
+  font-size: 1.5em;
+
+  margin: 2em 2em 1em 2em;
+}
+
+.navigation {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin: 0.5em 0.5em;
+
+  font-size: 0.8em;
+  font-weight: 50;
+  text-transform: uppercase;
+}
+
+.logo {
+  display: flex;
+
+  align-items: center;
+  flex-flow: column;
+
+  margin: 4em 2em 4em 5em;
+}
+
+a {
+  margin: 0 1.2em;
+  text-decoration: none;
+  color: #595858;
+}
+
+a:hover {
+  font-weight: bolder;
+}
+
+form {
+  margin: 0.5em 0.5em 1.5em 0.5em;
+  display: flex;
+
+  border-radius: 5px;
+  padding: 2px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+input[type="search"] {
+  border: none;
+  background: white;
+  margin: 0;
+  padding: 5px 5px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+
+input[type="search"]::placeholder {
+  color: #bbb;
+}
+
+button[type="submit"] {
+  /* these two hide the button text */
+  text-indent: -999px;
+  overflow: hidden;
+
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat center;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+button[type="submit"]:hover {
+  opacity: 1;
+}
+
+button[type="submit"]:focus,
+input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #868686;
+  outline: none;
+  color: #595858;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ------- IMG ------- */
+
+img {
+  display: flex;
+  max-width: 100%;
+  flex-grow: 1;
+}
+
+#logo {
+  float: left;
+  width: 7em;
+  margin-bottom: 1em;
+}
+
+.cover-image {
+  /* covers the whole page */
+  width: 150vw;
+  overflow: visible;
+  margin: unset;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.img-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
+}
+
+#img-6,
+#img-7,
+#img-8,
+#img-9 {
+  max-width: 20%;
+}
+
+#fb-img,
+#insta-img {
+  max-width: 1.7em;
+  margin: auto 0.5em;
+}
+
+/* ------- TXT ------- */
+
+.logo-txt {
+  float: left;
+
+  color: #595858;
+  font-family: "Ailerons";
+  font-size: 1.5em;
+  font-weight: 50;
+}
+
+.img-description {
+  margin-top: 2em;
+  font-weight: 100;
+  color: #595858;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ------- footer ------- */
+
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: baseline;
+
+  margin: 8em 3em;
+}
+
+.facebook,
+.instagram {
+  margin: 0 0.5em 1em 0.5em;
+}
+
+.logo-txt-2 {
+  margin: 0 0.5em 0 2em;
+  font-family: "Ailerons";
+  font-weight: 50;
+  font-size: 2em;
+  color: #7f7f7f;
+}
