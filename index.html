@@ -45,7 +45,7 @@
 
           <!-- modal -->
           <a href="./src/about/about.html" id="about">About</a>
-          <a href="./src/blog/blog.html" id="about">Blog</a>
+          <a href="./src/blog/blog.html" id="blog">Blog</a>
           <a href="./src/gallery/gallery.html" id="about">Gallery</a>
 
           <!-- modal -->
@@ -70,9 +70,9 @@
       <article class="blog-thumbnails">
         <h2 class="blogposts">Latest blog posts</h2>
 
-        <div class="thumbnail-container">
-          <div class="line-1"></div>
+        <div class="line-1"></div>
 
+        <div class="thumbnail-container">
           <!-- dynamically fill later, id changes -->
           <div class="thumbnail" id="blog-1">
             <img
@@ -130,6 +130,9 @@
         />
 
         <h2 class="about-header">About</h2>
+
+        <div class="line-2"></div>
+
         <p class="about-txt">
           At vero eos et accusamus et iusto odio dignissimos ducimus qui
           blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
@@ -140,68 +143,72 @@
         </p>
       </article>
 
+      <div class="line-3"></div>
+
       <!-- Gallery -->
       <article class="gallery">
-        <h2 class="gallery"><a href="../gallery/gallery.html">Gallery</a></h2>
+        <h2 class="gallery-header">
+          <a href="../gallery/gallery.html">Gallery</a>
+        </h2>
 
         <div class="img-gallery">
           <img
             id="img-6"
-            src="../../assets/photos/blog/vransko-lake-cycling-gallery-1.jpg"
+            src="./assets/photos/homepage/gallery2_sm.jpg"
             alt="Gravel cycling Croatia"
           />
           <img
             id="img-7"
-            src="../../assets/photos/blog/vransko-lake-cycling-gallery-2.jpg"
+            src="./assets/photos/blog/vransko-lake-cycling-gallery-2.jpg"
             alt="Cycling through mediterranean forest"
           />
           <img
             id="img-8"
-            src="../../assets/photos/blog/vransko-lake-cycling-gallery-3.jpg"
+            src="./assets/photos/homepage/gallery1_sm.jpg"
             alt="Pushing bicycle uphill"
           />
           <img
             id="img-9"
-            src="../../assets/photos/blog/vransko-lake-cycling-gallery-4.jpg"
+            src="./assets/photos/homepage/gallery4_sm.jpg"
             alt="Gravel cycling Croatia"
           />
         </div>
       </article>
-
-      <!-- Contact 2 -->
-
-      <nav class="navigation">
-        <a href="../home/home.html" id="home">Home</a>
-        <a href="../about/about.html" id="about">About</a>
-        <a href="../blog/blog.html" id="about">Blog</a>
-        <a href="../contact/contact.html" id="contact">Contact</a>
-      </nav>
     </main>
-    <footer class="footer">
-      <p class="logo-txt-2">Bike-bits</p>
 
-      <a
-        href="https://www.facebook.com/e.marekica"
-        target="_blank"
-        class="facebook"
-      >
-        <img
-          src="../../assets/icons/facebook.png"
-          alt="Facebook icon"
-          id="fb-img"
-        />
-      </a>
-      <a
-        href="https://www.instagram.com/e.marekica.makes"
-        target="_blank"
-        class="instagram"
-      >
-        <img
-          src="../../assets/icons/instagram.png"
-          alt="Instagram icon"
-          id="insta-img"
-        />
-      </a>
+    <footer class="footer">
+      <nav class="nav-bottom">
+        <a href="../home/home.html" id="home2">Home</a>
+        <a href="../about/about.html" id="about2">About</a>
+        <a href="../blog/blog.html" id="blog2">Blog</a>
+        <a href="../contact/contact.html" id="contact2">Contact</a>
+      </nav>
+
+      <div class="soc-media">
+        <p class="logo-txt-2">Bike-bits</p>
+        <a
+          href="https://www.facebook.com/e.marekica"
+          target="_blank"
+          class="facebook"
+        >
+          <img
+            src="../../assets/icons/facebook.png"
+            alt="Facebook icon"
+            id="fb-img"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/e.marekica.makes"
+          target="_blank"
+          class="instagram"
+        >
+          <img
+            src="../../assets/icons/instagram.png"
+            alt="Instagram icon"
+            id="insta-img"
+          />
+        </a>
+      </div>
     </footer>
   </body>
 </html>
