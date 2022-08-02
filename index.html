@@ -19,7 +19,10 @@
     <link rel="icon" type="favicon" href="assets/icons/favicon.ico" />
 
     <link rel="stylesheet" href="src/home/home.css" />
+    <link rel="stylesheet" href="src/gallery/slider.css" />
+
     <script defer src="src/home/home.js"></script>
+    <script defer src="src/gallery/slider.js"></script>
 
     <title>Bike Bits</title>
   </head>
@@ -146,32 +149,50 @@
       <div class="line-3"></div>
 
       <!-- Gallery -->
-      <article class="gallery">
+      
         <h2 class="gallery-header">
           <a href="../gallery/gallery.html">Gallery</a>
         </h2>
 
-        <div class="img-gallery">
-          <img
-            id="img-6"
-            src="./assets/photos/homepage/gallery2_sm.jpg"
-            alt="Gravel cycling Croatia"
-          />
-          <img
-            id="img-7"
-            src="./assets/photos/blog/vransko-lake-cycling-gallery-2.jpg"
-            alt="Cycling through mediterranean forest"
-          />
-          <img
-            id="img-8"
-            src="./assets/photos/homepage/gallery1_sm.jpg"
-            alt="Pushing bicycle uphill"
-          />
-          <img
-            id="img-9"
-            src="./assets/photos/homepage/gallery4_sm.jpg"
-            alt="Gravel cycling Croatia"
-          />
+        <div class="img-gallery slider">
+          <div class="slide slide--1">
+            <img
+              id="img-6"
+              src="./assets/photos/homepage/gallery2_sm.jpg"
+              alt="Gravel cycling Croatia"
+            />
+          </div>
+
+          <div class="slide slide--2">
+            <img
+              id="img-7"
+              src="./assets/photos/blog/vransko-lake-cycling-gallery-2.jpg"
+              alt="Cycling through mediterranean forest"
+            />
+          </div>
+
+          <div class="slide slide--3">
+            <img
+              id="img-8"
+              src="./assets/photos/homepage/gallery1_sm.jpg"
+              alt="Pushing bicycle uphill"
+            />
+          </div>
+
+          <div class="slide slide--4">
+            <img
+              id="img-9"
+              src="./assets/photos/homepage/gallery4_sm.jpg"
+              alt="Gravel cycling Croatia"
+            />
+          </div>
+          <button class="slider__btn slider__btn--left">&larr;</button>
+          <button class="slider__btn slider__btn--right">&rarr;</button>
+          <div class="dots">
+            <button class="dots__dot" data-slide="0"></button>
+            <button class="dots__dot dots__dot--active" data-slide="1"></button>
+            <button class="dots__dot" data-slide="2"></button>
+          </div>
         </div>
       </article>
     </main>
