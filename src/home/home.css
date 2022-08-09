@@ -340,7 +340,7 @@ h2 {
 }
 
 .gallery-header {
-  margin: 2em 0 2.5em 0;
+  margin: 2em 0 4em 0;
   text-transform: capitalize;
 }
 
@@ -505,7 +505,7 @@ footer {
   width: 100%;
   height: 30vh;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .image-slider {
