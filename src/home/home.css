@@ -648,11 +648,8 @@ img .img-gallery {
 /* DOTS */
 
 .dots {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
+  text-align: center;
+  margin: 2em 0 10em 0;
 }
 
 .dots__dot {

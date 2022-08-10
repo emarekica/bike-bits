@@ -4,8 +4,7 @@
 
 const slider = function () {
   const slides = document.querySelectorAll(".slide");
-  const btnLeft = document.querySelector(".slider__btn--left");
-  const btnRight = document.querySelector(".slider__btn--right");
+
   const dotContainer = document.querySelector(".dots");
 
   let curSlide = 0;
@@ -68,8 +67,6 @@ const slider = function () {
   init();
 
   // Event handlers
-  btnRight.addEventListener("click", nextSlide);
-  btnLeft.addEventListener("click", prevSlide);
 
   document.addEventListener("keydown", function (e) {
     if (e.key === "ArrowLeft") prevSlide();
