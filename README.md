@@ -24,6 +24,7 @@
 [See the mockups on Behance](https://www.behance.net/gallery/130790147/CYCLING-BLOG)
 
 <br><br>
+
 <hr / >
 <br>
 
@@ -47,6 +48,16 @@
 
 <br>
 
+- [x] homepage
+- [ ] about
+- [x] blog
+- [ ] gallery
+- [ ] order modal
+- [ ] contact modal
+
+<br>
+
+- [ ] SCSS
 - [ ] fill text content
       <br>
 
