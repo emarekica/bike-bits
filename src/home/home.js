@@ -1,6 +1,56 @@
 "use strict";
 
-// Slider 2
+// 1:
+//  use selection of the existing images added by slider 1 - small imgs
+// remove what is surplus
+
+// 2:
+// redirect it to the Slider 2 modal - big imgs logic
+// adjust dot position (JS or CSS)
+
+//
+
+// --- PRE-MODAL
+
+// selecting DOM elements
+const modal = document.querySelector(".modal");
+const previews = document.querySelectorAll(".gallery img");
+const original = document.querySelector(".img-modal");
+const caption = document.querySelector(".caption");
+
+// looping over images to open them when click
+previews.forEach((preview) => {
+  // adding "click" event listener to all imgs
+  preview.addEventListener("click", () => {
+    modal.classList.add("open");
+
+    // opening animation
+    original.classList.add("open");
+
+    // dynamic img & txt
+    const originalSrc = preview.getAttribute("data-original");
+    // if you need to navigate to a folder with bigger imgs
+    // original.src = `./full/${originalSrc}`;
+    original.src = originalSrc;
+
+    const altTxt = preview.alt;
+    caption.textContent = altTxt;
+  });
+});
+
+// closing opened modal imgs
+// e = event
+modal.addEventListener("click", (e) => {
+  // check what you're clicking on (contains() returns boolean)
+  if (e.target.classList.contains("modal")) {
+    modal.classList.remove("open");
+    original.classList.remove("open");
+  }
+});
+
+//
+
+// --- Slider 2 MODAL - big imgs
 
 const slider = function () {
   const slides = document.querySelectorAll(".slide");
@@ -33,6 +83,8 @@ const slider = function () {
   const goToSlide = function (slide) {
     slides.forEach(
       (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+      // width: 20em;
+      // margin: 1em 1em;
     );
   };
 
