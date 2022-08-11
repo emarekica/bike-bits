@@ -444,7 +444,7 @@ h2 {
 footer {
   display: flex;
   flex-direction: column;
-  margin-bottom: 4em;
+  margin: 3em 0 4em 0;
 }
 
 #home2,
@@ -498,7 +498,7 @@ footer {
 
 /* SLIDER 1 - small imgs*/
 
-.slide-container {
+/* .slide-container {
   display: flex;
 
   width: 100%;
@@ -519,9 +519,9 @@ footer {
   align-items: center;
 
   transition: 0.7s;
-}
+} */
 
-.slides-div {
+/* .slides-div {
   display: flex;
 
   align-items: center;
@@ -540,16 +540,16 @@ img .img-gallery {
   transition: 0.5s;
 }
 
-.button {
+.slider-button {
   position: absolute;
 
-  width: 70%;
+  width: 110%;
   height: auto;
 
   transition: 0.5s;
-}
+} */
 
-#slider-span1:target ~ .image-slider #img-6,
+/* #slider-span1:target ~ .image-slider #img-6,
 #slider-span1:target ~ .image-slider #button-1,
 #slider-span2:target ~ .image-slider #img-7,
 #slider-span2:target ~ .image-slider #button-2,
@@ -561,22 +561,103 @@ img .img-gallery {
   height: auto;
 
   background-color: transparent;
-}
+} */
 
-#slider-span1:target ~ .image-slider {
+/* #slider-span1:target ~ .image-slider {
+  transform: translate(50%);
   left: 25%;
 }
 
 #slider-span2:target ~ .image-slider {
+  transform: translate(20%);
   left: 0%;
 }
 
 #slider-span3:target ~ .image-slider {
+  transform: translate(0%);
   left: -25%;
 }
 
 #slider-span4:target ~ .image-slider {
+  transform: translate(-25%);
   left: -50%;
+} */
+
+/* SLIDER SMALL */
+
+.slide-container {
+  display: flex;
+
+  width: 100%;
+  height: 60vh;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-slider {
+  display: flex;
+
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.7s;
+}
+
+.slides-div {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 30px;
+}
+
+.img {
+  position: relative;
+
+  height: 100%;
+  width: 20em;
+
+  transition: 0.5s;
+}
+
+.button {
+  position: absolute;
+
+  width: 20em;
+  height: 20em;
+
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: transparent;
+}
+
+#slider-span1:target ~ .image-slider #img1,
+#slider-span1:target ~ .image-slider #button-1,
+#slider-span2:target ~ .image-slider #img2,
+#slider-span2:target ~ .image-slider #button-2,
+#slider-span3:target ~ .image-slider #img3,
+#slider-span3:target ~ .image-slider #button-3,
+#slider-span4:target ~ .image-slider #img4,
+#slider-span4:target ~ .image-slider #button-4 {
+  width: 40em;
+  height: auto;
+  padding: 0 0.7em;
+
+  background-color: transparent;
+}
+
+#slider-span1:target ~ .image-slider,
+#slider-span2:target ~ .image-slider,
+#slider-span3:target ~ .image-slider,
+#slider-span4:target ~ .image-slider {
+  left: 0%;
 }
 
 /* SLIDER - MODAL - big imgs */
