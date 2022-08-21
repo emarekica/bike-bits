@@ -329,6 +329,9 @@ h2 {
 
 .thumbnail {
   margin: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .thumbnail-txt {
@@ -497,6 +500,18 @@ footer {
 }
 
 /* ------- blog thumbnails ------- */
+
+.thumbnail > a {
+  margin: 0;
+}
+
+a > img {
+  opacity: 0.5;
+}
+
+.thumbnail:hover {
+  transform: translateY(-2em);
+}
 
 /* 
 
