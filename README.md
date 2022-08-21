@@ -56,28 +56,44 @@
 - [ ] contact modal
 
 <br>
+<hr />
+<br>
 
+**Done**
+<br>
+
+- [x] Homepage Gallery Slider
+
+<br>
+
+**To Do**
+<br>
+
+- [ ] animate hero header
+- [ ] animate Blog Thumbnails (CSS + JS)
 - [ ] SCSS
 - [ ] fill text content
       <br>
 
-- [ ] home page
-- [ ] about
-- [ ] blog page
-- [ ] gallery page
 - [ ] order form - opens when you click on a button somewhere in the gallery
 - [ ] contact
-      <br>
+    <br>
+<hr />
+<br>
 
+**Features to implement**
+<br>
+
+- [x] slider component
+- [ ] responsive blog thumbnails
 - [ ] smooth scroll
-- [ ] slider component (gallery at the bottom)
 - [ ] reveal elements on scroll
-- [ ] lazy loadin images
+- [ ] lazy loading images
 - [ ] sticky navigation
       <br>
 
-- [ ] modal window when clicking on a photo in the gallery at the bottom or on the screen (except the header photo)
-- [ ] connect LOGO & "bike-bits" with homepage URL
+- [ ] modal window when clicking on a photo in the gallery or on the screen (except the header photo)
+- [x] connect LOGO & "bike-bits" with homepage URL
 - [ ] responsive search bar
 - [ ] interactive map
 - [ ] photo download disabled
