@@ -511,6 +511,7 @@ a > img {
 
 .thumbnail:hover {
   transform: translateY(-2em);
+  transition: 0.7s;
 }
 
 /* 
