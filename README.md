@@ -54,6 +54,8 @@
 - [ ] gallery
 - [ ] order modal
 - [ ] contact modal
+- [ ] cookie element
+- [ ] 404 page
 
 <br>
 <hr />
