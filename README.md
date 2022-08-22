@@ -72,7 +72,7 @@
 <br>
 
 - [ ] animate hero header
-- [ ] animate Blog Thumbnails (CSS + JS)
+- [x] animate Blog Thumbnails
 - [ ] SCSS
 - [ ] fill text content
       <br>
@@ -87,7 +87,7 @@
 <br>
 
 - [x] slider component
-- [ ] responsive blog thumbnails
+- [x] responsive blog thumbnails
 - [ ] smooth scroll
 - [ ] reveal elements on scroll
 - [ ] lazy loading images
@@ -174,6 +174,6 @@
 
 ---
 
-Examples:
+Inspo:
 
 - [Bikepacking.com](https://bikepacking.com/)

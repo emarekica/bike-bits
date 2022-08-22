@@ -1,53 +1,8 @@
 "use strict";
 
-// --- BLOG THUMBNAILS
-
-/* change the OPACITY and TXT on hover
-
-EVENTS: mouseenter, mouseleave
-
-1. add txt to img in blog thumbnail
-2. when hovered: 
-    - remove text
-    - opacity: 0
-    - transform: translateY(-2em);
-    - transition: 0.7s;
-
-
-ADDING STYLES: https://github.com/emarekica/DOM/blob/master/styles-attributes-classes.js
-
-INSERT CONTENT: https://github.com/emarekica/DOM/blob/master/scd.js
-
-EVENTS & HANDLERS: https://github.com/emarekica/DOM/blob/master/events-eventHandlers.js
-
-
-
-EXAMPLE:
-
-let test = document.getElementById("test");
-
-// This handler will be executed only once when the cursor
-// moves over the unordered list
-test.addEventListener("mouseenter", function( event ) {   
-  // highlight the mouseenter target
-  event.target.style.color = "purple";
-
-  // reset the color after a short delay
-  setTimeout(function() {
-    event.target.style.color = "";
-  }, 500);
-}, false
-
-
-MDN EXAMPLE: https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseenter_event
-
-*/
-
-const thumbnail = document.querySelectorAll(".thumbnail");
-
-thumbnail;
-
 ////////////////////////////////////////////////
+
+// SLIDER
 
 // 1:
 //  use selection of the existing images added by slider 1 - small imgs
