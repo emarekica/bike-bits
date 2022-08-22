@@ -506,11 +506,30 @@ footer {
 }
 
 a > img {
-  opacity: 0.5;
+  opacity: 0.4;
+}
+
+a > p {
+  text-align: center;
+  transform: translateY(-4em);
+  font-size: 2em;
+  font-weight: 400;
+  color: #5c5c5c;
+  letter-spacing: 0.05em;
 }
 
 .thumbnail:hover {
   transform: translateY(-2em);
+  transition: 0.7s;
+}
+
+a:hover > img {
+  opacity: 1;
+  transition: 0.7s;
+}
+
+a:hover > p {
+  opacity: 0;
   transition: 0.7s;
 }
 
