@@ -22,8 +22,14 @@ let scene = new ScrollMagic.Scene({
 // ANIMATION
 
 timeline
-  .fromTo("#girl", 7, { y: 0 }, { y: -20, duration: 7 })
-  .fromTo("#hill", 7, { y: 0 }, { y: 10, duration: 7 }, "-=7")
+  .fromTo("#girl", 7, { y: 30, objectFit: "cover" }, { y: 0, duration: 7 })
+  .fromTo(
+    "#hill",
+    7,
+    { y: -40, objectFit: "cover" },
+    { y: 0, duration: 7 },
+    "-=7"
+  )
   .to(".parallax-overlap", 7, { bottom: "0%" }, "-=7");
 
 //
