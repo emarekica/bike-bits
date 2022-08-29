@@ -187,7 +187,7 @@ let scene = new ScrollMagic.Scene({
   triggerHook: 0,
 })
 
-  // hook the animation to te scene
+  // hook the animation to the scene
   .setTween(timeline)
 
   // pin another section to the header
@@ -200,13 +200,13 @@ let scene = new ScrollMagic.Scene({
 <br><br>
 
 10. Configure the second section overlaping so you don't see the bottom of the image of the header section.
-    <br>
+    <br><br>
 
-in CSS, set bottom section to `position: absolute`
-<br>
+a - in CSS, set bottom section to `position: absolute`
+<br><br>
 
-in JS, move that section to the top `{top: "0%"}`
-<br>
+b - in JS, move that section to the top `{top: "0%"}`
+<br><br>
 
 ```js
 timeline
