@@ -139,24 +139,43 @@
 
       <!-- About -->
       <article class="about">
-        <img
+        <!-- <img
           id="about-photo"
           src="./assets/photos/homepage/about-photo.jpg"
           alt="Girl with bicycle on the hiking trail"
-        />
+        /> -->
+        <div class="container">
+          <img
+            id="sky"
+            src="./assets/photos/homepage/parallax3-full.png"
+            alt="Sky background"
+          />
+          <img
+            id="hill"
+            src="./assets/photos/homepage/parallax2.png"
+            alt="Hill background"
+          />
+          <img
+            id="girl"
+            src="./assets/photos/homepage/parallax1.png"
+            alt="Girl on a bike foreground"
+          />
+        </div>
 
-        <h2 class="about-header">About</h2>
+        <div class="about-txt">
+          <h2 class="about-header">About</h2>
 
-        <div class="line-2"></div>
+          <div class="line-2"></div>
 
-        <p class="about-txt">
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui
-          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-          et quas molestias excepturi sint occaecati cupiditate non provident,
-          similique sunt in culpa qui officia deserunt mollitia animi, id est
-          laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-          distinctio.
-        </p>
+          <p class="about-me">
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque corrupti quos
+            dolores et quas molestias excepturi sint occaecati cupiditate non
+            provident, similique sunt in culpa qui officia deserunt mollitia
+            animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
+            est et expedita distinctio.
+          </p>
+        </div>
       </article>
 
       <div class="line-3"></div>
@@ -299,6 +318,20 @@
         </a>
       </div>
     </footer>
+
+    <!-- ANIMATION -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"
+      integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+
+    <!-- combines animation & scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
 
     <script src="./src/home/home.js"></script>
   </body>
