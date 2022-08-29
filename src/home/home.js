@@ -1,140 +1,33 @@
 "use strict";
 
-////////////////////////////////////////////////
+// --- PARALLAX ("About" section)
 
-// SLIDER
+// create contoller,
+let controller = new ScrollMagic.Controller();
 
-// 1:
-//  use selection of the existing images added by slider 1 - small imgs
-// remove what is surplus
+// for chaining multiple animations
+let timeline = new TimelineMax();
 
-// 2:
-// redirect it to the Slider 2 modal - big imgs logic
-// adjust dot position (JS or CSS)
+// hooc animation to scrolling via scene
+let scene = new ScrollMagic.Scene({
+  // triggerElement: ".parallax-container",
+  triggerElement: ".about",
+
+  duration: "100%",
+  triggerHook: 0,
+});
 
 //
 
-// --- PRE-MODAL
+// ANIMATION
 
-// // selecting DOM elements
-// const modal = document.querySelector(".modal");
-// const previews = document.querySelectorAll(".gallery img");
-// const original = document.querySelector(".img-modal");
-// const caption = document.querySelector(".caption");
+timeline
+  .fromTo("#girl", 7, { y: 0 }, { y: -20, duration: 7 })
+  .fromTo("#hill", 7, { y: 0 }, { y: 10, duration: 7 }, "-=7")
+  .to(".parallax-overlap", 7, { bottom: "0%" }, "-=7");
 
-// // looping over images to open them when click
-// previews.forEach((preview) => {
-//   // adding "click" event listener to all imgs
-//   preview.addEventListener("click", () => {
-//     modal.classList.add("open");
+//
 
-//     // opening animation
-//     original.classList.add("open");
+// SCROLL
 
-//     // dynamic img & txt
-//     const originalSrc = preview.getAttribute("data-original");
-//     // if you need to navigate to a folder with bigger imgs
-//     // original.src = `./full/${originalSrc}`;
-//     original.src = originalSrc;
-
-//     const altTxt = preview.alt;
-//     caption.textContent = altTxt;
-//   });
-// });
-
-// // closing opened modal imgs
-// // e = event
-// modal.addEventListener("click", (e) => {
-//   // check what you're clicking on (contains() returns boolean)
-//   if (e.target.classList.contains("modal")) {
-//     modal.classList.remove("open");
-//     original.classList.remove("open");
-//   }
-// });
-
-// //
-
-// // --- Slider 2 MODAL - big imgs
-
-// const slider = function () {
-//   const slides = document.querySelectorAll(".slide");
-
-//   const dotContainer = document.querySelector(".dots");
-
-//   let curSlide = 0;
-//   const maxSlide = slides.length;
-
-//   // Functions
-//   const createDots = function () {
-//     slides.forEach(function (_, i) {
-//       dotContainer.insertAdjacentHTML(
-//         "beforeend",
-//         `<button class="dots__dot" data-slide="${i}"></button>`
-//       );
-//     });
-//   };
-
-//   const activateDot = function (slide) {
-//     document
-//       .querySelectorAll(".dots__dot")
-//       .forEach((dot) => dot.classList.remove("dots__dot--active"));
-
-//     document
-//       .querySelector(`.dots__dot[data-slide="${slide}"]`)
-//       .classList.add("dots__dot--active");
-//   };
-
-//   const goToSlide = function (slide) {
-//     slides.forEach(
-//       (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
-//       // width: 20em;
-//       // margin: 1em 1em;
-//     );
-//   };
-
-//   // Next slide
-//   const nextSlide = function () {
-//     if (curSlide === maxSlide - 1) {
-//       curSlide = 0;
-//     } else {
-//       curSlide++;
-//     }
-
-//     goToSlide(curSlide);
-//     activateDot(curSlide);
-//   };
-
-//   const prevSlide = function () {
-//     if (curSlide === 0) {
-//       curSlide = maxSlide - 1;
-//     } else {
-//       curSlide--;
-//     }
-//     goToSlide(curSlide);
-//     activateDot(curSlide);
-//   };
-
-//   const init = function () {
-//     goToSlide(0);
-//     createDots();
-
-//     activateDot(0);
-//   };
-//   init();
-
-//   // Event handlers
-
-//   document.addEventListener("keydown", function (e) {
-//     if (e.key === "ArrowLeft") prevSlide();
-//     e.key === "ArrowRight" && nextSlide();
-//   });
-
-//   dotContainer.addEventListener("click", function (e) {
-//     if (e.target.classList.contains("dots__dot")) {
-//       const { slide } = e.target.dataset;
-//       goToSlide(slide);
-//       activateDot(slide);
-//     }
-//   });
-// };
-// slider();
+scene.setTween(timeline).setPin(".about").addTo(controller);
