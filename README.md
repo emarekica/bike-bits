@@ -66,6 +66,7 @@
 
 - [x] Homepage Gallery Slider
 - [x] animate Blog Thumbnails
+- [x] parallax effect in the About section **bug: fix bottom overflow**
 
 <br>
 
