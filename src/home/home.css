@@ -255,6 +255,7 @@ img {
   float: left;
   width: 7em;
   margin-bottom: 1em;
+  opacity: 1;
 }
 
 .cover-image {
@@ -406,42 +407,6 @@ h2 {
   margin-bottom: 4em;
 }
 
-.about {
-  display: grid;
-  grid-template-columns: repeat(10, auto);
-  grid-template-rows: auto;
-
-  background-color: #afafaf4c;
-}
-
-#about-photo {
-  grid-column: 1 / 3;
-  grid-row: 1 / 3;
-  max-width: 85%;
-}
-
-.about-header {
-  grid-column: 3;
-  grid-row: 1 / 2;
-
-  display: flex;
-  align-items: end;
-  justify-content: center;
-  margin-right: 1em;
-  margin-bottom: 2em;
-}
-
-.about-txt {
-  grid-column: 3;
-  grid-row: 2 / 3;
-  font-size: 1.5em;
-  margin: 1em 3em 1em 1em;
-  color: #737373;
-  font-weight: 300;
-  line-height: 1.5em;
-  word-break: break-all;
-}
-
 /* ------- footer ------- */
 
 footer {
@@ -490,7 +455,7 @@ footer {
   grid-column: 3;
   grid-row: 1 / 2;
 
-  margin: 0 12em 4em 10em;
+  margin: 0 14em 3em 14em;
 }
 
 .line-3 {
@@ -533,8 +498,67 @@ a:hover > p {
   transition: 0.7s;
 }
 
-/* 
+/* ------- Parallax "About me" ------- */
 
+.about {
+  /* display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: auto; */
+  /* 
+  display: flex;
+  flex-direction: column; */
+
+  position: relative;
+  min-height: 80vh;
+}
+
+.container img {
+  position: absolute;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+
+  height: 90vh;
+  width: 45%;
+  object-fit: cover;
+
+  z-index: 1;
+}
+
+.about-txt {
+  position: absolute;
+  left: 45%;
+  height: 90vh;
+  background-color: #afafaf4c;
+}
+
+/* #about-photo {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  max-width: 85%;
+} */
+
+.about-header {
+  /* grid-column: 3;
+  grid-row: 1 / 2; */
+
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  margin: 2em 2em 0.6em;
+}
+
+.about-me {
+  /* grid-column: 3;
+  grid-row: 2 / 3; */
+  font-size: 1.5em;
+  margin: 1em 5em 5em 5em;
+  color: #737373;
+  font-weight: 300;
+  line-height: 1.5em;
+  word-break: break-all;
+}
+
+/* 
 this combination allows to click on things and animate opacity 0 <-> 1
 
 opacity: 0;

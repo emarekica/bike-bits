@@ -65,6 +65,7 @@
 <br>
 
 - [x] Homepage Gallery Slider
+- [x] animate Blog Thumbnails
 
 <br>
 
@@ -72,7 +73,6 @@
 <br>
 
 - [ ] animate hero header
-- [x] animate Blog Thumbnails
 - [ ] SCSS
 - [ ] fill text content
       <br>
