@@ -29,7 +29,13 @@ let scene = new ScrollMagic.Scene({
 
 // --- header
 
-headerTimeline.fromTo("h1", { opacity: 0 }, { opacity: 1, duration: 5 });
+headerTimeline.fromTo("h1", { opacity: 0 }, { opacity: 1, duration: 8 });
+
+headerTimeline
+  .fromTo(".box-left", { x: "-100%" }, { x: "0%", duration: 5 }, "-=8")
+  .fromTo(".box-right", { x: "100%" }, { x: "0%", duration: 5 }, "-=8");
+
+//
 
 // --- parallax
 

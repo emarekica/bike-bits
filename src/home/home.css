@@ -253,10 +253,10 @@ h1 {
   transform: translate(-50%, -78%);
 
   font-family: Ailerons;
-  color: rgb(251, 251, 251);
+  color: #fff;
   font-size: 5em;
   text-align: center;
-  line-height: 1.6em;
+  line-height: 1.5em;
 }
 
 .cover-img {
@@ -270,21 +270,29 @@ h1 {
 }
 
 .box-right {
+  position: absolute;
+  top: 52.5%;
+  left: 30%;
+
   display: inline-block;
-  color: #cacaca;
-  background-color: #cacaca2d;
-  height: 7em;
-  width: 75%;
-  border: 1px solid greenyellow;
+  background-color: #cacaca35;
+  height: 8em;
+  width: 80vw;
+
+  border-radius: 5px;
 }
 
 .box-left {
-  display: inline-block;
-  background-color: #cacaca2d;
-  height: 7em;
-  width: 75%;
+  position: absolute;
+  top: 70%;
+  right: 30%;
 
-  border: 1px solid red;
+  display: inline-block;
+  background-color: #cacaca35;
+  height: 8em;
+  width: 80vw;
+
+  border-radius: 5px;
 }
 
 /* ------- IMG ------- */
