@@ -66,14 +66,17 @@
 
 - [x] Homepage Gallery Slider
 - [x] animate Blog Thumbnails
-- [x] parallax effect in the About section **bug: fix bottom overflow**
+- [x] parallax effect in the About section
+- [x] animate hero header
+- [x] connect LOGO & "bike-bits" with homepage URL
 
 <br>
 
 **To Do**
 <br>
 
-- [ ] animate hero header
+- [ ] fixed nav - remove when it reaches gallery
+- [ ] modal with big picture when image clicked
 - [ ] SCSS
 - [ ] fill text content
       <br>
@@ -91,14 +94,12 @@
 - [x] responsive blog thumbnails
 - [ ] smooth scroll
 - [ ] reveal elements on scroll
-- [ ] lazy loading images
-- [ ] sticky navigation
+- [ ] lazy loading images (blog)
       <br>
 
 - [ ] modal window when clicking on a photo in the gallery or on the screen (except the header photo)
-- [x] connect LOGO & "bike-bits" with homepage URL
 - [ ] responsive search bar
-- [ ] interactive map
+- [ ] interactive map (blog)
 - [ ] photo download disabled
       <br>
 
