@@ -5,8 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- favicon -->
     <link rel="icon" type="favicon" href="../../assets/icons/favicon.ico" />
 
+    <!-- fonts -->  
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="contact.css" />
     <script defer src="contact.js"></script>
 
@@ -19,28 +33,30 @@
 
       <header>
         <h1>Contact</h1>
-        <div class="line"></div>
+        <!-- <div class="line"></div> -->
        </header>
 
       <form>
-        <div class="name">
-          <label for="name">Name</label>
-          <input  
-            type="text"
-            id="name"
-            required />
-        </div>
+        <div class="inputs">
+          <div class="name">
+            <label for="name">Name</label>
+            <input  
+              type="text"
+              id="name"
+              required />
+          </div>
 
-        <div class="email">
-          <label for="email">E-mail</label>
-          <input 
-            type="email"
-            id="email"
-            pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
-            size="30"
-            required
+          <div class="email">
+            <label for="email">E-mail</label>
+            <input 
+              type="email"
+              id="email"
+              pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+              size="30"
+              required
 
-          />
+            />
+          </div>
         </div>
 
         <div class="message">
@@ -55,8 +71,8 @@
         </div>
 
         <div class="buttons">
-          <button class="form-submit-button">Send message</button>
-          <button class="form-reset-button" type="reset">Reset</button>
+          <button class="submit">Send message</button>
+          <button class="reset" type="reset">Reset</button>
         </div>
       </form>
       
@@ -87,8 +103,8 @@
             id="insta-img"
           />
         </a>
+      </div>
     </nav>
-    </div>
   
   </body>
 </html>
