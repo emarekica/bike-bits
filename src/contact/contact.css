@@ -124,12 +124,15 @@ table {
 
 body {
   background: url("../../assets/backgrounds/isopleths.png");
+  display: flex;
+  justify-content: center;
 }
 
 .modal-container {
-  background-color: #c8c8c824;
+  background-color: #cccaca47;
   margin: 4em;
   padding: 1.5em 2em 2.5em 3em;
+  width: 40vw;
   border-radius: 3px;
 }
 
@@ -155,18 +158,18 @@ h1 {
   border-bottom: 0.4px solid #737373;
   max-width: fit-content;
   line-height: 1.8em;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
+}
+
+label {
+  margin-bottom: 0.7em;
 }
 
 .inputs {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 2.5em;
-}
-
-label {
-  margin-bottom: 0.7em;
+  margin-bottom: 3em;
 }
 
 .name {
@@ -184,11 +187,11 @@ label {
   background-color: transparent;
 }
 
-#name:focus {
+input:focus {
   outline: 1px solid #737373;
-  font-family: Alegreya Sans, sans-serif;
   color: #737373;
   letter-spacing: 0.09em;
+  background: transparent;
 }
 
 .email {
@@ -204,6 +207,7 @@ label {
   width: 16em;
   padding: 0.3em;
   background-color: transparent;
+  font-family: Alegreya Sans, sans-serif;
 }
 
 #email:focus {
@@ -216,7 +220,7 @@ label {
 .message {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   letter-spacing: 0.09em;
   font-weight: 300;
 }
@@ -248,7 +252,7 @@ textarea {
 }
 
 .buttons {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 .submit {
@@ -257,12 +261,16 @@ textarea {
   letter-spacing: 0.09em;
   text-transform: lowercase;
   font-weight: 300;
-  background: #ededed;
+  background-color: #fffcfc;
   border: 0.4px solid #737373;
   border-radius: 3px;
 }
 
-/* .submit:hover {} */
+.submit:hover {
+  color: #ededed;
+  background: #5c7548;
+  font-weight: 500;
+}
 
 .reset {
   padding: 0.4em 2em;
@@ -275,7 +283,12 @@ textarea {
   border-radius: 3px;
 }
 
-/* .reset:hover {} */
+.reset:hover {
+  color: #ededed;
+  /* color: #737373; */
+  background-color: #db5453;
+  font-weight: 500;
+}
 
 /* ------- footer ------- */
 
@@ -294,12 +307,12 @@ textarea {
 }
 
 #logo {
-  width: 3em;
+  width: 2.5em;
 }
 
 #fb-img,
 #insta-img {
-  width: 1.5em;
+  width: 1em;
 }
 
-/* make FB & INSTA icons transparent background pngs */
+/* fix fonts in input after typing */
