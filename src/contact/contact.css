@@ -182,9 +182,12 @@ label {
 }
 
 #name {
-  width: 16em;
+  width: 14em;
   padding: 0.3em;
   background-color: transparent;
+  margin-right: 2em;
+  font-family: Alegreya Sans, sans-serif;
+  color: #737373;
 }
 
 input:focus {
@@ -204,10 +207,11 @@ input:focus {
 }
 
 #email {
-  width: 16em;
+  width: 14em;
   padding: 0.3em;
   background-color: transparent;
   font-family: Alegreya Sans, sans-serif;
+  color: #737373;
 }
 
 #email:focus {
@@ -314,5 +318,3 @@ textarea {
 #insta-img {
   width: 1em;
 }
-
-/* fix fonts in input after typing */
