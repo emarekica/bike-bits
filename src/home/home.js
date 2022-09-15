@@ -54,3 +54,38 @@ timeline
 scene.setTween(timeline).setPin(".about").addTo(controller);
 
 //
+
+// CONTACT MODAL
+
+const modal = document.querySelector(".modal-container");
+const homePage = document.querySelectorAll(".home");
+const body = document.getElementsByTagName("body")[0];
+
+const openModal = document.getElementById("contact2");
+const closeModal = document.querySelector(".exit");
+
+openModal.addEventListener("click", () => {
+  homePage.forEach((element) => {
+    element.classList.add("close");
+  });
+
+  modal.classList.add("open");
+  body.style.maxHeight = "100vh";
+});
+
+closeModal.addEventListener("click", () => {
+  modal.classList.remove("open");
+
+  homePage.forEach((element) => {
+    element.classList.remove("close");
+  });
+});
+
+// modal.addEventListener("click", (e) => {
+//   if (e.target.classList.contains("modal")) {
+//     homePage.classList.remobe("close");
+//     modal.classList.remove("open");
+//   }
+// });
+
+// make modal close by clicking on other parts of the page than the "x"
