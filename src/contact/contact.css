@@ -137,7 +137,7 @@ body {
 }
 
 .exit,
-h1,
+.contact-header,
 .name,
 .email,
 .message,
@@ -151,7 +151,7 @@ h1,
   text-align: right;
 }
 
-h1 {
+.contact-header {
   font-size: 1.4em;
   font-weight: 300;
   letter-spacing: 0.09em;
@@ -189,7 +189,7 @@ label {
   color: #737373;
 }
 
-input:focus {
+#name:focus {
   outline: 1px solid #737373;
   color: #737373;
   letter-spacing: 0.09em;
@@ -247,7 +247,8 @@ textarea:focus {
   letter-spacing: 0.09em;
 }
 
-input,
+#email,
+#name,
 textarea {
   border: 0.4px solid #737373;
   border-radius: 3px;
@@ -308,16 +309,16 @@ textarea {
   margin: 0 0.5em 1em 0.5em;
 }
 
-#logo {
+#modal-logo {
   width: 2.5em;
 }
 
-#fb-img,
-#insta-img {
+#modal-fb-img,
+#modal-insta-img {
   width: 1em;
 }
 
-/* ------- media query ------- */
+/* ------- media queries ------- */
 
 @media (max-width: 1050px) {
   .modal-container {
@@ -333,7 +334,7 @@ textarea {
 }
 
 @media (max-width: 820px) {
-  h1 {
+  .contact-header {
     margin-bottom: 1.2em;
   }
 
@@ -406,7 +407,7 @@ textarea {
     width: auto;
   }
 
-  footer {
+  .modal-footer {
     display: flex;
     flex-direction: column;
   }

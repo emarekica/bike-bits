@@ -198,6 +198,11 @@ form {
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
+li {
+  /* hides bullets */
+  list-style: none;
+}
+
 input[type="search"] {
   border: none;
   background: white;
@@ -467,6 +472,15 @@ footer {
   margin: 0 2em;
 }
 
+#contact2 {
+  color: #595858;
+}
+
+li#contact2:hover {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
 .soc-media {
   display: flex;
   flex-direction: row;
@@ -700,31 +714,31 @@ pointer-events: none; */
   left: 0%;
 }
 
-/* SLIDER - MODAL - big imgs */
+/* ------- contact modal ------- */
 
-.modal {
-  background-color: rgba(0, 0, 0, 0.6);
+/* can be implemented as SCSS mixin directly from Contact folder */
 
-  /*  this combination allows to click on things and animate opacity 0 <-> 1  */
+/* THOUGHT: add this to body through JS
+
+body {
+  background: url("../../assets/backgrounds/isopleths.png");
+  display: flex;
+  justify-content: center;
+} */
+
+.modal-container {
+  background: url("../../assets/backgrounds/isopleths.png");
+
+  background-color: #cccaca47;
+  margin: 4em;
+  padding: 1.5em 2em 2.5em 2em;
+  width: 40vw;
+  border-radius: 3px;
+
+  /*  this combo allows to click and animate opacity */
   opacity: 0;
   pointer-events: none;
 
-  /* covers everything */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  transition: 0.25s ease-out;
-}
-
-.modal.open {
-  opacity: 1;
-  pointer-events: all;
-}
-
-.img-modal {
   position: absolute;
   height: 120%;
   top: 50%;
@@ -733,73 +747,184 @@ pointer-events: none; */
   transition: all 0.25s ease-out;
 }
 
-/* when we click, it is going to add class "open" to it and expand */
-.img-modal.open {
+/* when background clicked */
+.modal-container.open {
+  opacity: 1;
+  pointer-events: all;
   transform: translate(-50%, -50%) scale(1);
 }
 
-.slide-container2 {
+/* hides (and REMOVES) the rest of the page content from the layout*/
+.home.close {
+  display: none;
+}
+
+.exit,
+.contact-header,
+.name,
+.email,
+.message,
+.submit,
+.reset {
+  font-family: Alegreya Sans SC, sans-serif;
+  color: #737373;
+}
+
+.exit {
+  text-align: right;
+}
+
+.contact-header {
+  font-size: 1.4em;
+  font-weight: 300;
+  letter-spacing: 0.09em;
+  border-bottom: 0.4px solid #737373;
+  max-width: fit-content;
+  line-height: 1.8em;
+  margin-bottom: 3em;
+}
+
+label {
+  margin-bottom: 0.7em;
+}
+
+.inputs {
   display: flex;
-  align-items: center;
-  padding-left: 4em;
-  margin: 5em 0 7em 0;
-
-  /* overflow: hidden; */
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3em;
 }
 
-.slider {
-  width: 70%;
-  height: 50vh;
-  margin: 0 auto;
-  position: relative;
-
-  /* overflow: hidden; */
-}
-
-.slide {
+.name {
   display: flex;
-  position: absolute;
+  flex-direction: column;
 
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  width: 100%;
-  height: auto;
-
-  transition: transform 1s;
+  font-weight: 300;
+  letter-spacing: 0.09em;
 }
 
-.slide > img {
-  width: 15em;
-  height: auto;
-  object-fit: cover;
-  margin: 0 2em;
+#name {
+  width: 14em;
+  padding: 0.3em;
+  background-color: transparent;
+  margin-right: 2em;
+  font-family: Alegreya Sans, sans-serif;
+  color: #737373;
 }
 
-/* DOTS */
-
-.dots {
-  text-align: center;
-  margin: 2em 0 10em 0;
+#name:focus {
+  outline: 1px solid #737373;
+  color: #737373;
+  letter-spacing: 0.09em;
+  background: transparent;
 }
 
-.dots__dot {
-  border: none;
-  background-color: #b9b9b9;
-  opacity: 0.7;
-  height: 1rem;
-  width: 1rem;
-  border-radius: 50%;
-  margin-right: 1.75rem;
-  cursor: pointer;
-  transition: all 0.5s;
+.email {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.09em;
+  font-weight: 300;
+  text-transform: capitalize;
 }
 
-.dots__dot:last-child {
-  margin: 0;
+#email {
+  width: 14em;
+  padding: 0.3em;
+  background-color: transparent;
+  font-family: Alegreya Sans, sans-serif;
+  color: #737373;
 }
 
-.dots__dot--active {
-  background-color: #888;
-  opacity: 1;
+#email:focus {
+  outline: 1px solid #737373;
+  font-family: Alegreya Sans, sans-serif;
+  color: #737373;
+  letter-spacing: 0.09em;
 }
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+  letter-spacing: 0.09em;
+  font-weight: 300;
+}
+
+textarea {
+  width: 16em;
+  padding: 0.3em;
+  background-color: transparent;
+  font-family: Alegreya Sans, sans-serif;
+  color: #a4a4a4;
+  letter-spacing: 0.09em;
+
+  padding: 1em 1.5em;
+  width: auto;
+  font-size: 0.8em;
+}
+
+textarea:focus {
+  outline: 1px solid #737373;
+  font-family: Alegreya Sans, sans-serif;
+  color: #737373;
+  letter-spacing: 0.09em;
+}
+
+#email,
+#name,
+textarea {
+  border: 0.4px solid #737373;
+  border-radius: 3px;
+}
+
+.buttons {
+  margin-bottom: 3em;
+}
+
+.submit {
+  margin-right: 1em;
+  padding: 0.4em 4em;
+  letter-spacing: 0.09em;
+  text-transform: lowercase;
+  font-weight: 300;
+  background-color: #fffcfc;
+  border: 0.4px solid #737373;
+  border-radius: 3px;
+}
+
+.submit:hover {
+  color: #ededed;
+  background: #5c7548;
+  font-weight: 500;
+}
+
+.reset {
+  padding: 0.4em 2em;
+  letter-spacing: 0.09em;
+  text-transform: lowercase;
+  color: #ededed;
+  font-weight: 300;
+  background: #969696;
+  border: 0.4px solid #737373;
+  border-radius: 3px;
+}
+
+.reset:hover {
+  color: #ededed;
+  /* color: #737373; */
+  background-color: #db5453;
+  font-weight: 500;
+}
+
+/* ------- footer ------- */
+
+#modal-logo {
+  width: 2.5em;
+}
+
+#modal-fb-img,
+#modal-insta-img {
+  width: 1em;
+}
+
+/* configure the modal out of Picasso style  */
