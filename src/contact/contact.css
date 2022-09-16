@@ -181,7 +181,8 @@ label {
 }
 
 #name {
-  width: 14em;
+  /* width: 14em; */
+  width: auto;
   padding: 0.3em;
   background-color: transparent;
   margin-right: 2em;
@@ -205,7 +206,8 @@ label {
 }
 
 #email {
-  width: 14em;
+  /* width: 14em; */
+  width: auto;
   padding: 0.3em;
   background-color: transparent;
   font-family: Alegreya Sans, sans-serif;
@@ -320,15 +322,20 @@ textarea {
 
 /* ------- media queries ------- */
 
-@media (max-width: 1050px) {
-  .modal-container {
-    width: 50vw;
+@media (max-width: 1150px) {
+  .name,
+  .email {
+    width: auto;
   }
 }
 
 @media (max-width: 920px) {
-  #name,
-  #email {
+  .modal-container {
+    width: 50vw;
+  }
+
+  .name,
+  .email {
     width: auto;
   }
 }
