@@ -61,17 +61,22 @@ const modal = document.querySelector(".modal-container");
 const homePage = document.querySelectorAll(".home");
 const body = document.getElementsByTagName("body")[0];
 
-const openModal = document.getElementById("contact2");
+// const openModal = document.getElementsByClassName("contact");
+// console.log(openModal);
 const closeModal = document.querySelector(".exit");
 
-openModal.addEventListener("click", () => {
-  homePage.forEach((element) => {
-    element.classList.add("close");
-  });
+Array.from(document.getElementsByClassName("contact")).forEach(function (item) {
+  item.addEventListener("click", () => {
+    homePage.forEach((element) => {
+      element.classList.add("close");
+    });
 
-  modal.classList.add("open");
-  body.style.maxHeight = "100vh";
+    modal.classList.add("open");
+    body.style.maxHeight = "100vh";
+  });
 });
+
+// why to use this: https://stackoverflow.com/questions/22754315/for-loop-for-htmlcollection-elements
 
 closeModal.addEventListener("click", () => {
   modal.classList.remove("open");
@@ -83,9 +88,15 @@ closeModal.addEventListener("click", () => {
 
 // modal.addEventListener("click", (e) => {
 //   if (e.target.classList.contains("modal")) {
-//     homePage.classList.remobe("close");
+//     homePage.classList.remove("close");
 //     modal.classList.remove("open");
 //   }
 // });
 
 // make modal close by clicking on other parts of the page than the "x"
+
+// display: none; <> display: block;
+// add click listener on a backdrop to close everything when backdrop clicked
+
+// modal.style.display: "block";
+// backdrop.style.display: "block";

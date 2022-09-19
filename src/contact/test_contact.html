@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="icon" type="favicon" href="../../assets/icons/favicon.ico" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="test_contact.css" />
+    <script defer src="contact.js"></script>
+
+    <title>Contact Bike Bits</title>
+  </head>
+  <body>
+    <div class="modal-container">
+      <div class="exit">x</div>
+
+      <header>
+        <h1 class="contact-header">Contact</h1>
+      </header>
+
+      <form>
+        <div class="inputs">
+          <div class="name">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+          </div>
+
+          <div class="email">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+              size="30"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="message">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            columns="10"
+            placeholder="enter your message here"
+          ></textarea>
+        </div>
+
+        <div class="buttons">
+          <button class="submit">Send message</button>
+          <button class="reset" type="reset">Reset</button>
+        </div>
+      </form>
+
+      <footer class="modal-footer">
+        <ul class="soc-media">
+          <li>
+            <a href="../../index.html" target="_blank" class="homepage"
+              ><img
+                src="../../assets/icons/logo.png"
+                alt="Logo icon"
+                id="modal-logo"
+            /></a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.facebook.com/e.marekica"
+              target="_blank"
+              class="facebook"
+            >
+              <img
+                src="../../assets/icons/facebook.png"
+                alt="Facebook icon"
+                id="modal-fb-img"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/e.marekica.makes"
+              target="_blank"
+              class="instagram"
+            >
+              <img
+                src="../../assets/icons/instagram.png"
+                alt="Instagram icon"
+                id="modal-insta-img"
+              />
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
